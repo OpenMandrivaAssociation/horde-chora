@@ -18,6 +18,7 @@ Requires(post):	rpm-helper
 Requires:	horde >= 3.0
 Requires:	cvs
 BuildArch:	noarch
+BuildRoot: 	%{_tmppath}/%{name}-%{version}
 
 %description
 Chora is the Horde CVS viewer, and it provides an advanced web-based 
