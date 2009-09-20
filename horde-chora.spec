@@ -1,7 +1,7 @@
 %define	module	chora
 %define	name	horde-%{module}
 %define	version	2.1
-%define	release	%mkrel 3
+%define	release	%mkrel 4
 
 %define _requires_exceptions pear(Horde.*)
 
@@ -58,6 +58,9 @@ EOF
 install -d -m 755 %{buildroot}%{_sysconfdir}/horde/registry.d
 cat > %{buildroot}%{_sysconfdir}/horde/registry.d/%{module}.php <<'EOF'
 <?php
+//
+// Chora Horde configuration file
+//
  
 $this->applications['chora'] = array(
     'fileroot'    => $this->applications['horde']['fileroot'] . '/chora',
@@ -66,8 +69,6 @@ $this->applications['chora'] = array(
     'status'      => 'active',
     'menu_parent' => 'devel'
 );
- 
-?>
 EOF
 
 # remove .htaccess files
