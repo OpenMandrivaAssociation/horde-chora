@@ -1,7 +1,7 @@
 %define	module	chora
 %define	name	horde-%{module}
 %define	version	2.1
-%define	release	%mkrel 6
+%define	release	%mkrel 7
 
 %define _requires_exceptions pear(Horde.*)
 
@@ -17,7 +17,6 @@ Requires(post):	rpm-helper
 Requires:	horde >= 3.3.5
 Requires:	cvs
 BuildArch:	noarch
-BuildRoot: 	%{_tmppath}/%{name}-%{version}
 
 %description
 Chora is the Horde CVS viewer, and it provides an advanced web-based 
