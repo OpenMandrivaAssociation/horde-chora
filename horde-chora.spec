@@ -1,7 +1,7 @@
 %define	module	chora
 %define	name	horde-%{module}
 %define	version	2.1
-%define release:	8
+%define release:	9
 
 %define _requires_exceptions pear(Horde.*)
 
