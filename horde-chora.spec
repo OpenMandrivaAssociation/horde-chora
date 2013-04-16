@@ -1,11 +1,8 @@
 %define	module	chora
-%define	name	horde-%{module}
-%define	version	2.1
-%define release:	9
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		horde-%{module}
+Version:	2.1
+Release:	9
 Summary:	The Horde CVS viewer
 License:	GPL
 Group: 		System/Servers
