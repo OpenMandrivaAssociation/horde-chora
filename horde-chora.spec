@@ -3,8 +3,6 @@
 %define	version	2.1
 %define release:	9
 
-%define _requires_exceptions pear(Horde.*)
-
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
