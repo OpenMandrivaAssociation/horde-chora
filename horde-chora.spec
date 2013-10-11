@@ -2,7 +2,7 @@
 
 Name:		horde-%{module}
 Version:	2.1
-Release:	9
+Release:	10
 Summary:	The Horde CVS viewer
 License:	GPL
 Group: 		System/Servers
@@ -24,8 +24,6 @@ branch viewing capability, and human-readable diffs.
 %build
 
 %install
-rm -rf %{buildroot}
-
 # apache configuration
 install -d -m 755 %{buildroot}%{_webappconfdir}
 cat > %{buildroot}%{_webappconfdir}/%{name}.conf <<EOF
@@ -93,7 +91,6 @@ for file in `find %{buildroot}%{_datadir}/horde/%{module}/scripts`; do
 done
 
 %clean
-rm -rf %{buildroot}
 
 %post
 if [ $1 = 1 ]; then
@@ -107,7 +104,6 @@ fi
 
 
 %files
-%defattr(-,root,root)
 %doc COPYING README docs
 %config(noreplace) %{_webappconfdir}/%{name}.conf
 %config(noreplace) %{_sysconfdir}/horde/registry.d/%{module}.php
