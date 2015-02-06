@@ -2,7 +2,7 @@
 
 Name:		horde-%{module}
 Version:	2.1
-Release:	10
+Release:	11
 Summary:	The Horde CVS viewer
 License:	GPL
 Group: 		System/Servers
