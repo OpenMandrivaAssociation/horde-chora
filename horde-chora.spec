@@ -6,7 +6,7 @@ Release:	11
 Summary:	The Horde CVS viewer
 License:	GPL
 Group: 		System/Servers
-URL:		http://www.horde.org/%{module}
+URL:		https://www.horde.org/%{module}
 Source0:	ftp://ftp.horde.org/pub/%{module}/%{module}-h3-%{version}.tar.bz2
 Requires(post):	rpm-helper
 Requires:	horde >= 3.3.5
